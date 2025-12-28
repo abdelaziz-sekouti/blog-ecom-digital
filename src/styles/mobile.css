@@ -1,0 +1,61 @@
+# Mobile Responsiveness Fixes
+
+/* Additional mobile optimizations */
+@media (max-width: 640px) {
+  /* Navbar adjustments */
+  .fixed.top-0 {
+    padding: 0 1rem;
+  }
+  
+  .hidden.md\\:flex {
+    display: none;
+  }
+  
+  /* Touch-friendly buttons */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Product cards mobile */
+  .bg-white.rounded-xl.shadow-lg {
+    margin: 0.5rem 0;
+  }
+  
+  /* Blog masonry mobile */
+  .columns-1.md\\:columns-2.lg\\:columns-3 {
+    columns: 1;
+  }
+  
+  .break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  /* Form mobile */
+  .grid.grid-cols-1.md\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid.grid-cols-1.lg\\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .lg\\:col-span-2 {
+    grid-column: span 2;
+  }
+  
+  .lg\\:col-span-1 {
+    grid-column: span 1;
+  }
+}
+
+/* Large screens optimization */
+@media (min-width: 1440px) {
+  .max-w-7xl {
+    max-width: 1400px;
+  }
+}
